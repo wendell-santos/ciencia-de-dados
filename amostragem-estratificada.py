@@ -14,13 +14,29 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 9,
    "id": "dbe8bcee-28f5-40c3-ae5c-30f01fef080b",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "class\n",
+       "Iris-setosa        50\n",
+       "Iris-versicolor    50\n",
+       "Iris-virginica     50\n",
+       "Name: count, dtype: int64"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "#carregamento da base de dados e contagem de quantos registros existem por classe\n",
-    "iris = pd.read_csv('iris.csv')\n"
+    "iris = pd.read_csv('iris.csv')\n",
+    "iris['class'].value_counts()"
    ]
   },
   {
