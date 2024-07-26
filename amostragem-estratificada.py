@@ -2,14 +2,14 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 7,
    "id": "24a0dddd-080e-4d98-adc2-ce6335557b80",
    "metadata": {},
    "outputs": [],
    "source": [
     "#importação das bibliotecas: pandas para carregar arquivos .csv e train_test_split para divisão da base de dados (separar amostras)\n",
     "import pandas as pd\n",
-    "from sklearn"
+    "from sklearn.model_selection import train_test_split"
    ]
   },
   {
@@ -18,7 +18,10 @@
    "id": "dbe8bcee-28f5-40c3-ae5c-30f01fef080b",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#carregamento da base de dados e contagem de quantos registros existem por classe\n",
+    "iris = pd.read_csv('iris.csv')\n"
+   ]
   },
   {
    "cell_type": "code",
