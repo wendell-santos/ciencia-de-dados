@@ -6,7 +6,11 @@
    "id": "24a0dddd-080e-4d98-adc2-ce6335557b80",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#importação das bibliotecas: pandas para carregar arquivos .csv e train_test_split para divisão da base de dados (separar amostras)\n",
+    "import pandas as pd\n",
+    "from sklearn"
+   ]
   },
   {
    "cell_type": "code",
