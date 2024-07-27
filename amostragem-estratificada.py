@@ -78,7 +78,12 @@
    "id": "9bc80f27-b614-4487-8db7-6ccdb849d38b",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#Carregamento da base de dados e contagem de quantos registros por classe\n",
+    "\n",
+    "infert = pd.read_csv('infert.csv')\n",
+    "infert"
+   ]
   },
   {
    "cell_type": "code",
