@@ -49,7 +49,8 @@
     "#iris.iloc[:, 0:4]: buscamos somente os atributos previsores, ou seja, os dados sobre pétala e sétala de planta\n",
     "#iris.iloc[:, 4]: buscamos somente a classe, que é a espécie da planta (setosa, virginica ou versicolor)\n",
     "#test_size: selecionamos 50% da base de dados, que serão copiados para as variáveis X e Y. Essa função retorna 4 valores,\n",
-    "#stratify: para retornar "
+    "#porém, vamos usar somente 50% da base de dados e por isso colocamos \"_\" para outros valores\n",
+    "#stratify: para retornar uma amostra baseada na clase"
    ]
   },
   {
