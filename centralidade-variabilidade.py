@@ -40,7 +40,9 @@
    "id": "e5cc003f-8146-4648-9afe-8587952126f1",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "np.median(jogadores)"
+   ]
   },
   {
    "cell_type": "code",
@@ -48,7 +50,11 @@
    "id": "c85ed634-afae-4482-af9b-268346207e3b",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#criação da variável para geração dos quartis (0%, 25%, 75% e 100%)\n",
+    "quartis = np.quantile(jogadores, [0, 0.25, 0.5, 0.75, 1])\n",
+    "quartis"
+   ]
   },
   {
    "cell_type": "code",
