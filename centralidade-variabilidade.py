@@ -17,7 +17,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "#Importação das bibliotecas: Numpy para carregamento de planilhas e scipy(stats) para gerar estatísticas mais detalhadas\n",
+    "#Importação da biblioteca scipy(stats) para gerar estatísticas mais detalhadas\n",
     "import numpy as np\n",
     "from scipy import stats"
    ]
@@ -30,7 +30,8 @@
    "outputs": [],
    "source": [
     "#criação de variável com os dados dos jogadores, visualização da mediana e da média\n",
-    "jogadores = [40000, "
+    "jogadores = [40000, 18000, 12000, 250000, 30000, 140000, 300000, 800000]\n",
+    "np.mean(jogadores)"
    ]
   },
   {
