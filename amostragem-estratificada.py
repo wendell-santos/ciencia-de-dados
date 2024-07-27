@@ -41,7 +41,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 20,
    "id": "32741d4c-6357-4545-851f-cc2b79e8843c",
    "metadata": {},
    "outputs": [
@@ -49,13 +49,13 @@
      "data": {
       "text/plain": [
        "class\n",
-       "Iris-setosa        25\n",
        "Iris-virginica     25\n",
        "Iris-versicolor    25\n",
+       "Iris-setosa        25\n",
        "Name: count, dtype: int64"
       ]
      },
-     "execution_count": 11,
+     "execution_count": 20,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -67,14 +67,14 @@
     "#porém, vamos usar somente 50% da base de dados e por isso colocamos \"_\" para outros valores\n",
     "#stratify: para retornar uma amostra baseada na clase\n",
     "\n",
-    "x, _, y, _ = train_test_split(iris.iloc[:, 0:4], iris.iloc[:, 4],\n",
+    "X, _, y, _ = train_test_split(iris.iloc[:, 0:4], iris.iloc[:, 4],\n",
     "                              test_size = 0.5, stratify = iris.iloc[:, 4])\n",
     "y.value_counts()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 22,
    "id": "9bc80f27-b614-4487-8db7-6ccdb849d38b",
    "metadata": {},
    "outputs": [
@@ -278,7 +278,7 @@
        "[248 rows x 9 columns]"
       ]
      },
-     "execution_count": 13,
+     "execution_count": 22,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -292,7 +292,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 24,
    "id": "deec8468-6963-4e3c-9445-847881ee22fa",
    "metadata": {},
    "outputs": [
@@ -306,7 +306,7 @@
        "Name: count, dtype: int64"
       ]
      },
-     "execution_count": 16,
+     "execution_count": 24,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -317,8 +317,37 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 36,
    "id": "d77f064a-1c20-493b-b772-2c49a6c76a8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "education\n",
+      "6-11yrs    48\n",
+      "12+ yrs    46\n",
+      "0-5yrs      5\n",
+      "Name: count, dtype: int64\n"
+     ]
+    }
+   ],
+   "source": [
+    "X1, _, y1, _ = train_test_split(\n",
+    "    infert.iloc[:, 2:9],       # Features\n",
+    "    infert.iloc[:, 1],         # Target\n",
+    "    test_size=0.6,             # 60% para o conjunto de teste, 40% para o conjunto de treino\n",
+    "    stratify=infert.iloc[:, 1]) # Deve ser a série ou vetor de rótulos\n",
+    "\n",
+    "# Contagem dos valores em y1\n",
+    "print(y1.value_counts())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "01508c4e-afaa-4a8a-91cb-530c7d60c992",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -326,7 +355,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "01508c4e-afaa-4a8a-91cb-530c7d60c992",
+   "id": "67b6435c-95da-4f10-9d48-cd75231c23c3",
    "metadata": {},
    "outputs": [],
    "source": []
