@@ -74,7 +74,8 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "#visualização de estatísticas mais detalhadas usando scipy"
+    "#visualização de estatísticas mais detalhadas usando scipy\n",
+    "stats.describe(jogadores)"
    ]
   },
   {
