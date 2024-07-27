@@ -12,7 +12,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 12,
    "id": "b2d4563b-d1f3-4ce0-a986-d363c40d16ea",
    "metadata": {},
    "outputs": [],
@@ -24,10 +24,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 14,
    "id": "9a3c3add-9b44-457e-91cc-0479fa616aa1",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "198750.0"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "#criação de variável com os dados dos jogadores, visualização da mediana e da média\n",
     "jogadores = [40000, 18000, 12000, 250000, 30000, 140000, 300000, 800000]\n",
@@ -36,20 +47,42 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 16,
    "id": "e5cc003f-8146-4648-9afe-8587952126f1",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "90000.0"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "np.median(jogadores)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 18,
    "id": "c85ed634-afae-4482-af9b-268346207e3b",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 12000.,  27000.,  90000., 262500., 800000.])"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "#criação da variável para geração dos quartis (0%, 25%, 75% e 100%)\n",
     "quartis = np.quantile(jogadores, [0, 0.25, 0.5, 0.75, 1])\n",
@@ -58,10 +91,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 20,
    "id": "72fe6fb6-5a7d-4092-bba6-b008d3549f4f",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "267008.6943474741"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "#visualização do desvio padrão\n",
     "np.std(jogadores, ddof = 1)"
@@ -69,10 +113,21 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 22,
    "id": "0ede4fe8-7535-4295-bcbb-575ef4133ad2",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "DescribeResult(nobs=8, minmax=(12000, 800000), mean=198750.0, variance=71293642857.14285, skewness=1.581264265708317, kurtosis=1.3214948740622967)"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "#visualização de estatísticas mais detalhadas usando scipy\n",
     "stats.describe(jogadores)"
