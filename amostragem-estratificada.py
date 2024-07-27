@@ -45,7 +45,10 @@
    "id": "32741d4c-6357-4545-851f-cc2b79e8843c",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#iris.iloc[:, 0:4]: buscamos somente os atributos previsores, ou seja, os dados sobre pétala e sétala de planta\n",
+    "#iris.iloc[:, 4]: buscamos somente a classe, que é a espécie da planta (setosa, virginica ou versicolor)\n"
+   ]
   },
   {
    "cell_type": "code",
