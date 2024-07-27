@@ -41,16 +41,35 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 11,
    "id": "32741d4c-6357-4545-851f-cc2b79e8843c",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "class\n",
+       "Iris-setosa        25\n",
+       "Iris-virginica     25\n",
+       "Iris-versicolor    25\n",
+       "Name: count, dtype: int64"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "#iris.iloc[:, 0:4]: buscamos somente os atributos previsores, ou seja, os dados sobre pétala e sétala de planta\n",
     "#iris.iloc[:, 4]: buscamos somente a classe, que é a espécie da planta (setosa, virginica ou versicolor)\n",
     "#test_size: selecionamos 50% da base de dados, que serão copiados para as variáveis X e Y. Essa função retorna 4 valores,\n",
     "#porém, vamos usar somente 50% da base de dados e por isso colocamos \"_\" para outros valores\n",
-    "#stratify: para retornar uma amostra baseada na clase"
+    "#stratify: para retornar uma amostra baseada na clase\n",
+    "\n",
+    "x, _, y, _ = train_test_split(iris.iloc[:, 0:4], iris.iloc[:, 4],\n",
+    "                              test_size = 0.5, stratify = iris.iloc[:, 4])\n",
+    "y.value_counts()"
    ]
   },
   {
