@@ -62,7 +62,10 @@
    "id": "72fe6fb6-5a7d-4092-bba6-b008d3549f4f",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#visualização do desvio padrão\n",
+    "np.std(jogadores, ddof = 1)"
+   ]
   },
   {
    "cell_type": "code",
@@ -70,7 +73,9 @@
    "id": "0ede4fe8-7535-4295-bcbb-575ef4133ad2",
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "#visualização de estatísticas mais detalhadas usando scipy"
+   ]
   },
   {
    "cell_type": "code",
