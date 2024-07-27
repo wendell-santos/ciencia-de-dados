@@ -14,6 +14,7 @@
    "cell_type": "code",
    "execution_count": null,
    "id": "b2d4563b-d1f3-4ce0-a986-d363c40d16ea",
+   "metadata": {},
    "outputs": [],
    "source": [
     "#Importação das bibliotecas: Numpy para carregamento de planilhas e scipy(stats) para gerar estatísticas mais detalhadas\n",
